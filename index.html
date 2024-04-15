@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="imagens/contact-form-icon.svg" alt="logo"></a>
+    </header>
+    <main>
+        <h1>Interested in our <br> business pricing?</h1>
+        <h2>Fill out the form to view details and we’ll <br> contact you as soon as possible.</h2>
+        <div class="formulario">
+            <form action="#" autocomplete="on">
+                <div class="informações">
+                    <div class="nome">
+                        <label for="nome">Name:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Ex: Ethan Johnson" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Company Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ex: ethan@johnson.com" required>
+                    </div>
+                </div>
+                <div class="informações">
+                    <div class="campanha">
+                        <label for="campanha">Company Size:</label>
+                        <div class="input">
+                            <input type="text" name="campanha" id="campanha" placeholder="5-10 emplayess" required>
+                            <img src="imagens/Expand_down.svg" alt="seta">
+                        </div>
+                    </div>
+                    <div class="subjetivo">
+                        <label for="subjetivo">Subject:</label>
+                        <div class="input">
+                            <input type="text" name="subjetivo" id="subjetivo" placeholder="Building Landing pages" required>
+                            <img src="imagens/Expand_down.svg" alt="seta">
+                        </div>
+                    </div>
+                </div>
+                <label for="mensagem">Message:</label>
+                <textarea name="" id="mensagem" cols="30" rows="10" placeholder="5-10 emplayess"></textarea>
+                <input type="submit" value="Contact Sales" class="enviar" id="enviar">
+            </form>
+        </div>
+        <div class="fade" id="fade" class="hide"></div>
+        <button class="fechar" id="fechar" class="hide">Fechar modal</button>
+        <div class="modal" id="modal" class="hide">
+            <p>Muito obrigado por se cadastrar</p>
+        </div>
+    </main>
+</body>
+</html>
